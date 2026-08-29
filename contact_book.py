@@ -1,7 +1,7 @@
 contact_book = []
 def list_add(list):
-    user_name = input("name")
-    user_phone = input("phone")
+    user_name = str(input("name"))
+    user_phone = int(input("phone"))
     data = {"name" : user_name, "phone" : user_phone}
     for i in contact_book:
         if i["name"] == user_name and i["phone"] == user_phone:
