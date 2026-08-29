@@ -10,8 +10,8 @@ def list_add(list):
     contact_book.append(data)
 
 def list_search(list):
-    search_name = input("Enter the name to search: ")
-    search_phone = input("Enter the phone number to search: ")
+    search_name = str(input("Enter the name to search: "))
+    search_phone = int(input("Enter the phone number to search: "))
     for i in contact_book:
         if i["name"] == search_name and i["phone"] == search_phone:
             print("Contact found:", i)
@@ -19,8 +19,8 @@ def list_search(list):
     print("Contact not found.")
 
 def list_update(list):
-    search_update_name = input("Enter the name to update: ")
-    search_update_phone = input("Enter the phone number to update: ")
+    search_update_name = str(input("Enter the name to update: "))
+    search_update_phone = int(input("Enter the phone number to update: "))
     for i in contact_book:
         if i["name"] == search_update_name and i["phone"] == search_update_phone:
             new_name = input("Enter the new name: ")
